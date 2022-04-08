@@ -17,7 +17,7 @@ r_new = binedge(i) + 1./(v(i-1)/binwidth) .* (u - cdf(i)); % new random variable
 % Uncomment this, for visualtization of the random variable distribution
 %     histogram(r_new,16,'Normalization','pdf');
 %     title('Generated Histogram from simulated data','FontSize',20);
-%     xlabel('AOD','FontSize',20);
+%     xlabel('Random Variables','FontSize',20);
 %     ylabel('Probability','FontSize',20);
 
 end
