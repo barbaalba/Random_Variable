@@ -1,4 +1,5 @@
 function r_new = RVGeneratorHistMethod(binedge,v,n)
+% To Generate random number from a given histogram pdf
 % n : is number of desired RV to be generated
 % binedge : edge of each bin 
 % v : vector corresponding the probability of each bin
