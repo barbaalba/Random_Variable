@@ -1,4 +1,4 @@
-function [binedge, prob] = ExtractBins(fig)
+function [binedge, prob, bincenter] = ExtractBins(fig)
 % To Extract bin edge and corresponding probabilty of each bin from
 % experimental data
 %
@@ -10,5 +10,8 @@ dataObjs = axObjs.Children;
 
 prob = dataObjs.Values;
 binedge = dataObjs.BinEdges;
+binwidth = dataObjs.BinWidth;
+bincenter = binedge + binwidth/2;
+bincenter(end) = [];
 
 end
